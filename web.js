@@ -6,7 +6,7 @@ var fs=require("fs");
 app.get('/', function(request, response) {
   //response.send('Hello World2!');
   var buffer = new Buffer(1024);
-  buffer = fs.readFileSync("index.html");
+  buffer = fs.readFileSync("./index.html");
   //console.log(buffer);
   response.send(buffer.toString('utf-8'));
 });
